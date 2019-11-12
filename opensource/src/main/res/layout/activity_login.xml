@@ -31,9 +31,13 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
             android:src="@drawable/logo_reverse"
             android:transitionName="@string/transition_logo_splash" />
 
@@ -53,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:indeterminate="true"
-            android:visibility="invisible"/>
+            android:visibility="invisible" />
 
         <LinearLayout
             android:id="@+id/loginInputElements"
@@ -148,10 +152,10 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="35dp"
                     android:layout_marginBottom="20dp"
+                    android:background="@drawable/phone_login_button_bg"
                     android:text="@string/login"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp"
-                    android:background="@drawable/phone_login_button_bg"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
